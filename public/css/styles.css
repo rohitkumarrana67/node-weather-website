@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+}
+nav h1 {
+  text-align: center;
+}
+
+.navigator {
+  overflow: hidden;
+  background-color: #222222;
+  padding: 10px;
+}
+
+.navigator a {
+  font-size: 18px;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.navigator a:hover {
+  color: aqua;
+  text-decoration: none;
+}
+
+.search-box {
+  max-width: 300px;
+  margin: 20px auto;
+  padding: 10px;
+  border: solid #222222 1.5px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px black;
+}
+
+.search-box button {
+  width: 50%;
+  margin: 10px 25%;
+}
+
+.search-box h1 {
+  display: inline-block;
+  position: relative;
+  top: 10px;
+}
+
+.weather-logo {
+  width: 20%;
+  margin: 10px;
+}
+
+.forecast-detail {
+  text-align: center;
+  color: #222222;
+}
+
+.temperature {
+  border-right: solid #222222 2px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #222222;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+}
+
+#errorMessage {
+  text-align: center;
+}
+
+.img-container {
+  width: 40%;
+  width: 20%;
+  margin: 10px auto;
+}
+
+#place,
+#summary,
+#icon {
+  display: none;
+}
+canvas {
+  margin: 0 auto;
+}

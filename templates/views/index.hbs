@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav> {{> header}}</nav>
+    <div class="search-box">
+        <img class="weather-logo" src="/img/weather.png" alt="">
+        <h1>{{title}}</h1>
+        <div class="row forecast-detail">
+            <div class="col-12" style="text-align: center;">
+
+                <h4 id="place"></h4>
+                <canvas id="icon" width="60" height="60"></canvas>
+                <h5 id="summary"></h5>
+            </div>
+
+        </div>
+        <form action="">
+            <input class="form-control" type="text" placeholder="Enter the location">
+            <button class="btn  btn-primary">Search</button>
+        </form>
+
+        <p id="errorMessage"></p>
+
+        <div class="row forecast-detail">
+
+            <div class="col-6 temperature">
+                <H6>TEMPERATURE</H6>
+                <h3 id="temperature"></h3>
+                <h5>&#8451</h5>
+            </div>
+            <div class="col-6 place">
+                <h6>PRECIPITATION</h6>
+                <h5 id="precipitation"></h5>
+                <h5>%</h5>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
